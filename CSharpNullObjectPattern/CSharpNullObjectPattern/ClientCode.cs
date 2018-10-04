@@ -8,7 +8,7 @@ namespace CSharpNullObjectPattern
 {
     public class ClientCode
     {
-        public ClientCode(ISampleAbstraction abstraction)
+        public void DoSomething(ISampleAbstraction abstraction)
         {
             abstraction.SampleMethod();
         }

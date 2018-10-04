@@ -10,8 +10,9 @@ namespace CSharpNullObjectPattern
             var nullObject = new NullImplementation();
 
             //Client code using a real implementation and a null implementation
-            var usingReal = new ClientCode(real);
-            var usingNull = new ClientCode(nullObject);
+            var client = new ClientCode();
+            client.DoSomething(real);
+            client.DoSomething(nullObject);
             Console.ReadLine();
         }
     }
