@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CSharpNullObjectPattern
 {
-    public class RealImplementation : ISampleAbstraction
+    public class ClientCode
     {
-        public void SampleMethod()
+        public ClientCode(ISampleAbstraction abstraction)
         {
-            Console.WriteLine("Hello I'm the real implementation");
+            abstraction.SampleMethod();
         }
     }
 }
